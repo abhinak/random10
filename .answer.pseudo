@@ -14,11 +14,15 @@ hs_err_pid*
 
 
 public class answerPseudo(){
-public String randomInRange(String name){
-int Max=15;
-int Min=6;
-int RandonInRange=Min + (int)(Math.random() * ((Max - Min) + 1));
-int RandomInRangeString=RandomInRange.toString();
-return name+" "+RandomInRangeString;
-}
+      public String randomInRange(String name){
+            int Max=15;
+            int Min=6;
+            //Math.random() gives a number in the range [0,1)
+            //Math.random() * ((Max - Min) + 1) gives a number in range [0,Max-Min+1)
+            //(int)Math.random() * ((Max - Min) + 1) gives a number in range [0,Max-Min]
+            //Min + (int)(Math.random() * ((Max - Min) + 1)) gives a number in the range [Min,Max]
+            int RandonInRange=Min + (int)(Math.random() * ((Max - Min) + 1));
+            int RandomInRangeString=RandomInRange.toString();
+            return name+" "+RandomInRangeString;
+     }
 }
