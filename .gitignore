@@ -1,0 +1,24 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+
+public class answer.pseudo(){
+public String randomInRange(String name){
+int Max=15;
+int Min=6;
+int RandonInRange=Min + (int)(Math.random() * ((Max - Min) + 1));
+int RandomInRangeString=RandomInRange.toString();
+return name+" "+RandomInRangeString;
+}
+}
