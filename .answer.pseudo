@@ -13,7 +13,7 @@ hs_err_pid*
 
 
 
-public class answer.pseudo(){
+public class answerPseudo(){
 public String randomInRange(String name){
 int Max=15;
 int Min=6;
